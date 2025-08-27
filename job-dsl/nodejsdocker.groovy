@@ -16,7 +16,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('mmgriffi/docker-nodejs-demodsl')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('dockerhub')
+            //registryCredentials('dockerhub')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
