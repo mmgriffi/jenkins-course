@@ -13,6 +13,6 @@
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name 
     } 
     steps { 
-        shell("npm install") 
+        cmd("npm install")  // it was bash("npm install") before
     } 
 }
