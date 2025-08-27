@@ -13,6 +13,6 @@
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name 
     } 
     steps { 
-        bat 'npm install'  // it was bash("npm install") before
+        batchFile('npm install')  // it was bash("npm install") before
     } 
 }
